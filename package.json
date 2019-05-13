@@ -1,0 +1,32 @@
+{
+  "name": "node-es6-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/dev",
+    "build": "mkdir dist && babel src -s -d dist",
+    "dev": "nodemon --exec npm run babel-node -- ./index.js",
+    "watch": "nodemon",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@babel/register": "^7.4.4",
+    "babel-jest": "^24.7.1",
+    "babel-preset-jest": "^24.6.0",
+    "jest": "^24.7.1",
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.6"
+  }
+}
